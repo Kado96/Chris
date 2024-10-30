@@ -19,7 +19,7 @@ with open('style.css') as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Load Excel file directly
-file_path = 'Unilever_-_all_versions_-_labels_-_2024-10-29-12-31-02.xlsx'
+file_path = 'Unilever_-_all_versions_-_labels_-_2024-10-30-08-15-29.xlsx'
 df_unilever = pd.read_excel(file_path, sheet_name='Unilever')
 df_gpi = pd.read_excel(file_path, sheet_name='GPI')
 df_sondage = pd.read_excel(file_path, sheet_name='Sondage')
