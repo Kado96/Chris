@@ -19,7 +19,7 @@ with open('style.css') as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Nom du fichier
-file_name = 'Unilever_-_all_versions_-_labels_-_2024-10-30-16-06-33 (1).xlsx'
+file_name = 'Unilever_-_all_versions_-_labels_-_2024-10-30-19-19-41.xlsx'
 
 # Charger les feuilles du fichier Excel
 df_unilever = pd.read_excel(file_name, sheet_name='Unilever')
