@@ -18,11 +18,15 @@ st.header(":bar_chart: Unilever Dashboard")
 with open('style.css') as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# Load Excel file directly
-file_path = "C:/Users/kande/Desktop/Mes application streamltit/L'application finale/App/Unilever_-_all_versions_-_labels_-_2024-10-30-08-15-29.xlsx"
-df_unilever = pd.read_excel(file_path, sheet_name='Unilever')
-df_gpi = pd.read_excel(file_path, sheet_name='GPI')
-df_sondage = pd.read_excel(file_path, sheet_name='Sondage')
+# Nom du fichier
+file_name = 'Unilever_-_all_versions_-_labels_-_2024-10-30-08-15-29.xlsx'
+
+# Charger les feuilles du fichier Excel
+df_unilever = pd.read_excel(file_name, sheet_name='Unilever')
+df_gpi = pd.read_excel(file_name, sheet_name='GPI')
+df_sondage = pd.read_excel(file_name, sheet_name='Sondage')
+
+print("Fichiers chargés avec succès.")
 
 # Sélection des colonnes spécifiques
 df_unilever_cols = ["_index", "_submission_time", "Nom et prénom de l'agent", "Nom de l'établissement", 
